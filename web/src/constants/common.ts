@@ -54,6 +54,7 @@ export const LanguageList = [
   'German',
   'French',
   'Italian',
+  'Turkish',
 ];
 export const LanguageMap = {
   English: 'English',
@@ -68,6 +69,7 @@ export const LanguageMap = {
   German: 'German',
   French: 'Français',
   Italian: 'Italiano',
+  Turkish: 'Türkçe',
 };
 
 export enum LanguageAbbreviation {
@@ -83,6 +85,7 @@ export enum LanguageAbbreviation {
   De = 'de',
   Fr = 'fr',
   It = 'it',
+  Tr = 'tr',
 }
 
 export const LanguageAbbreviationMap = {
@@ -98,6 +101,7 @@ export const LanguageAbbreviationMap = {
   [LanguageAbbreviation.De]: 'Deutsch',
   [LanguageAbbreviation.Fr]: 'Français',
   [LanguageAbbreviation.It]: 'Italiano',
+  [LanguageAbbreviation.Tr]: 'Türkçe',
 };
 
 export const LanguageTranslationMap = {
@@ -121,6 +125,7 @@ export const LanguageTranslationMap = {
   Greek: 'el',
   Hindi: 'hi',
   Ukrainian: 'uk',
+  Turkish: 'tr',
 };
 
 export enum FileMimeType {
