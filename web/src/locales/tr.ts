@@ -301,113 +301,113 @@ Prosedürel Bellek: Öğrenilmiş beceriler, alışkanlıklar ve otomatik prosed
       action: 'İşlem',
       parsingStatus: 'Ayrıştırma durumu',
       parsingStatusTip:
-        'Document parsing time varies based on several factors. Enabling features like Knowledge Graph, RAPTOR, Auto Question Extraction, or Auto Keyword Extraction will significantly increase processing time. If the progress bar stalls, please consult these two FAQs: https://ragflow.io/docs/dev/faq#why-does-my-document-parsing-stall-at-under-one-percent.',
-      processBeginAt: 'Begin at',
-      processDuration: 'Duration',
-      progressMsg: 'Progress',
+        'Belge ayrıştırma süresi çeşitli faktörlere bağlı olarak değişir. Bilgi Grafiği, RAPTOR, Otomatik Soru Çıkarma veya Otomatik Anahtar Kelime Çıkarma gibi özellikleri etkinleştirmek işlem süresini önemli ölçüde artırır. İlerleme çubuğu durursa, lütfen şu SSS\'lere bakın: https://ragflow.io/docs/dev/faq#why-does-my-document-parsing-stall-at-under-one-percent.',
+      processBeginAt: 'Başlangıç',
+      processDuration: 'Süre',
+      progressMsg: 'İlerleme',
       noTestResultsForRuned:
-        'No relevant results found. Try adjusting your query or parameters.',
+        'İlgili sonuç bulunamadı. Sorgunuzu veya parametrelerinizi ayarlamayı deneyin.',
       noTestResultsForNotRuned:
-        'No test has been run yet. Results will appear here.',
+        'Henüz test çalıştırılmadı. Sonuçlar burada görünecek.',
       testingDescription:
-        'Conduct a retrieval test to check if RAGFlow can recover the intended content for the LLM. If you have adjusted the default settings, such as keyword similarity weight or similarity threshold, to achieve the optimal results, be aware that these changes will not be automatically saved. You must apply them to your chat assistant settings or the Retrieval agent component settings.',
-      similarityThreshold: 'Similarity threshold',
+        'RAGFlow\'un LLM için amaçlanan içeriği alıp alamayacağını kontrol etmek için bir erişim testi yapın. Anahtar kelime benzerlik ağırlığı veya benzerlik eşiği gibi varsayılan ayarları optimal sonuçlar elde etmek için ayarladıysanız, bu değişikliklerin otomatik olarak kaydedilmeyeceğini unutmayın. Bunları sohbet asistanı ayarlarınıza veya Erişim ajan bileşeni ayarlarına uygulamanız gerekir.',
+      similarityThreshold: 'Benzerlik eşiği',
       similarityThresholdTip:
-        'RAGFlow employs either a combination of weighted keyword similarity and weighted vector cosine similarity, or a combination of weighted keyword similarity and weighted reranking score during retrieval. This parameter sets the threshold for similarities between the user query and chunks. Any chunk with a similarity score below this threshold will be excluded from the results. By default, the threshold is set to 0.2. This means that only chunks with hybrid similarity score of 20 or higher will be retrieved.',
-      vectorSimilarityWeight: 'Vector similarity weight',
+        'RAGFlow, erişim sırasında ağırlıklı anahtar kelime benzerliği ve ağırlıklı vektör kosinüs benzerliği kombinasyonu veya ağırlıklı anahtar kelime benzerliği ve ağırlıklı yeniden sıralama puanı kombinasyonu kullanır. Bu parametre, kullanıcı sorgusu ile parçalar arasındaki benzerlik eşiğini ayarlar. Bu eşiğin altında benzerlik puanına sahip parçalar sonuçlardan hariç tutulur. Varsayılan olarak eşik 0.2 olarak ayarlanmıştır.',
+      vectorSimilarityWeight: 'Vektör benzerlik ağırlığı',
       vectorSimilarityWeightTip:
-        'This sets the weight of keyword similarity in the combined similarity score, either used with vector cosine similarity or with reranking score. The total of the two weights must equal 1.0.',
-      keywordSimilarityWeight: 'Keyword similarity weight',
+        'Bu, birleşik benzerlik puanında anahtar kelime benzerliğinin ağırlığını ayarlar. Vektör kosinüs benzerliği veya yeniden sıralama puanı ile birlikte kullanılır. İki ağırlığın toplamı 1.0 olmalıdır.',
+      keywordSimilarityWeight: 'Anahtar kelime benzerlik ağırlığı',
       keywordSimilarityWeightTip:
-        'This sets the weight of keyword similarity in the combined similarity score, either used with vector cosine similarity or with reranking score. The total of the two weights must equal 1.0.',
-      testText: 'Test text',
-      testTextPlaceholder: 'Input your question here!',
-      testingLabel: 'Run',
-      similarity: 'Hybrid similarity',
-      termSimilarity: 'Term similarity',
-      vectorSimilarity: 'Vector similarity',
-      hits: 'Hits',
-      view: 'View',
-      filesSelected: 'Files selected',
-      upload: 'Upload',
-      run: 'Parse',
-      runningStatus0: 'PENDING',
-      runningStatus1: 'PARSING',
-      runningStatus2: 'CANCELED',
-      runningStatus3: 'SUCCESS',
-      runningStatus4: 'FAIL',
-      pageRanges: 'Page ranges',
+        'Bu, birleşik benzerlik puanında anahtar kelime benzerliğinin ağırlığını ayarlar. Vektör kosinüs benzerliği veya yeniden sıralama puanı ile birlikte kullanılır. İki ağırlığın toplamı 1.0 olmalıdır.',
+      testText: 'Test metni',
+      testTextPlaceholder: 'Sorunuzu buraya girin!',
+      testingLabel: 'Çalıştır',
+      similarity: 'Hibrit benzerlik',
+      termSimilarity: 'Terim benzerliği',
+      vectorSimilarity: 'Vektör benzerliği',
+      hits: 'Eşleşmeler',
+      view: 'Görüntüle',
+      filesSelected: 'Dosya seçildi',
+      upload: 'Yükle',
+      run: 'Ayrıştır',
+      runningStatus0: 'BEKLEMEDE',
+      runningStatus1: 'AYRIŞTIRILIYOR',
+      runningStatus2: 'İPTAL EDİLDİ',
+      runningStatus3: 'BAŞARILI',
+      runningStatus4: 'BAŞARISIZ',
+      pageRanges: 'Sayfa aralıkları',
       pageRangesTip:
-        'Range of pages to be parsed; pages outside this range will not be processed.',
-      fromPlaceholder: 'from',
-      fromMessage: 'Missing start page number',
-      toPlaceholder: 'to',
-      toMessage: 'Missing end page number (excluded)',
-      layoutRecognize: 'PDF parser',
+        'Ayrıştırılacak sayfa aralığı; bu aralık dışındaki sayfalar işlenmeyecektir.',
+      fromPlaceholder: 'başlangıç',
+      fromMessage: 'Başlangıç sayfa numarası eksik',
+      toPlaceholder: 'bitiş',
+      toMessage: 'Bitiş sayfa numarası eksik (hariç)',
+      layoutRecognize: 'PDF ayrıştırıcı',
       layoutRecognizeTip:
-        'Use a visual model for PDF layout analysis to effectively locate document titles, text blocks, images, and tables. If the naive option is chosen, only the plain text in the PDF will be retrieved. Please note that this option currently works ONLY for PDF documents.',
-      taskPageSize: 'Task page size',
-      taskPageSizeMessage: 'Please input your task page size!',
-      taskPageSizeTip: `During layout recognition, a PDF file is split into chunks and processed in parallel to increase processing speed. This parameter sets the size of each chunk. A larger chunk size reduces the likelihood of splitting continuous text between pages.`,
-      addPage: 'Add page',
-      greaterThan: 'The current value must be greater than to!',
+        'Belge başlıklarını, metin bloklarını, resimleri ve tabloları etkili bir şekilde bulmak için PDF düzen analizi için görsel bir model kullanın. Naive seçeneği seçilirse, yalnızca PDF\'deki düz metin alınır. Bu seçeneğin şu anda YALNIZCA PDF belgeleri için çalıştığını unutmayın.',
+      taskPageSize: 'Görev sayfa boyutu',
+      taskPageSizeMessage: 'Lütfen görev sayfa boyutunuzu girin!',
+      taskPageSizeTip: `Düzen tanıma sırasında, bir PDF dosyası parçalara bölünür ve işlem hızını artırmak için paralel olarak işlenir. Bu parametre, her parçanın boyutunu ayarlar. Daha büyük parça boyutu, sayfalar arasındaki sürekli metnin bölünme olasılığını azaltır.`,
+      addPage: 'Sayfa ekle',
+      greaterThan: 'Mevcut değer bitiş değerinden büyük olmalıdır!',
       greaterThanPrevious:
-        'The current value must be greater than the previous to!',
-      selectFiles: 'Select files',
-      changeSpecificCategory: 'Change specific category',
-      uploadTitle: 'Drag and drop your file here to upload',
+        'Mevcut değer önceki bitiş değerinden büyük olmalıdır!',
+      selectFiles: 'Dosya seç',
+      changeSpecificCategory: 'Belirli kategoriyi değiştir',
+      uploadTitle: 'Yüklemek için dosyanızı buraya sürükleyip bırakın',
       uploadDescription:
-        'Supports single or batch file upload. For a locally deployed RAGFlow: the total file size limit per upload is 1GB, with a batch upload limit of 32 files. There is no cap on the total number of files per account. For demo.ragflow.io, the total file size limit per upload is 10MB, with each file not exceeding 10MB and a maximum of 128 files per account.',
-      chunk: 'Chunk',
-      bulk: 'Bulk',
-      cancel: 'Cancel',
-      close: 'Close',
-      rerankModel: 'Rerank model',
-      rerankPlaceholder: 'Please select',
-      rerankTip: `Optional. If left empty, RAGFlow will use a combination of weighted keyword similarity and weighted vector cosine similarity; if a rerank model is selected, a weighted reranking score will replace the weighted vector cosine similarity. Please be aware that using a rerank model will significantly increase the system's response time. If you wish to use a rerank model, ensure you use a SaaS reranker; if you prefer a locally deployed rerank model, ensure you start RAGFlow with docker-compose-gpu.yml.`,
+        'Tekli veya toplu dosya yüklemeyi destekler. Yerel olarak dağıtılmış RAGFlow için: yükleme başına toplam dosya boyutu sınırı 1GB, toplu yükleme sınırı 32 dosyadır. Hesap başına toplam dosya sayısında sınır yoktur. demo.ragflow.io için, yükleme başına toplam dosya boyutu sınırı 10MB, her dosya 10MB\'ı aşamaz ve hesap başına maksimum 128 dosya.',
+      chunk: 'Parça',
+      bulk: 'Toplu',
+      cancel: 'İptal',
+      close: 'Kapat',
+      rerankModel: 'Yeniden sıralama modeli',
+      rerankPlaceholder: 'Lütfen seçin',
+      rerankTip: `İsteğe bağlı. Boş bırakılırsa, RAGFlow ağırlıklı anahtar kelime benzerliği ve ağırlıklı vektör kosinüs benzerliği kombinasyonunu kullanır; bir yeniden sıralama modeli seçilirse, ağırlıklı yeniden sıralama puanı ağırlıklı vektör kosinüs benzerliğinin yerini alır. Yeniden sıralama modeli kullanmanın sistemin yanıt süresini önemli ölçüde artıracağını unutmayın.`,
       topK: 'Top-K',
-      topKTip: `Used together with the Rerank model, this setting defines the number of text chunks to be sent to the specified reranking model.`,
-      delimiter: `Delimiter for text`,
+      topKTip: `Yeniden sıralama modeli ile birlikte kullanılır, bu ayar belirtilen yeniden sıralama modeline gönderilecek metin parçası sayısını tanımlar.`,
+      delimiter: `Metin ayırıcı`,
       delimiterTip:
-        'A delimiter or separator can consist of one or multiple special characters. If it is multiple characters, ensure they are enclosed in backticks( ``). For example, if you configure your delimiters like this: \\n`##`;, then your texts will be separated at line breaks, double hash symbols (##), and semicolons.',
-      enableChildrenDelimiter: 'Child chunk are used for retrieval',
-      childrenDelimiter: 'Delimiter for text',
+        'Bir ayırıcı veya ayraç bir veya birden fazla özel karakterden oluşabilir. Birden fazla karakter ise, ters tırnak içine alındığından emin olun (``). Örneğin, ayırıcılarınızı şu şekilde yapılandırırsanız: \\n`##`;, metinleriniz satır sonlarında, çift hash sembollerinde (##) ve noktalı virgüllerde ayrılacaktır.',
+      enableChildrenDelimiter: 'Alt parçalar erişim için kullanılır',
+      childrenDelimiter: 'Metin ayırıcı',
       childrenDelimiterTip:
-        'A delimiter or separator can consist of one or multiple special characters. If it is multiple characters, ensure they are enclosed in backticks( ``). For example, if you configure your delimiters like this: \\n`##`;, then your texts will be separated at line breaks, double hash symbols (##), and semicolons.',
+        'Bir ayırıcı veya ayraç bir veya birden fazla özel karakterden oluşabilir. Birden fazla karakter ise, ters tırnak içine alındığından emin olun (``). Örneğin, ayırıcılarınızı şu şekilde yapılandırırsanız: \\n`##`;, metinleriniz satır sonlarında, çift hash sembollerinde (##) ve noktalı virgüllerde ayrılacaktır.',
 
-      html4excel: 'Excel to HTML',
-      html4excelTip: `Use with the General chunking method. When disabled, spreadsheets (XLSX or XLS(Excel 97-2003)) in the knowledge base will be parsed into key-value pairs. When enabled, they will be parsed into HTML tables, splitting every 12 rows if the original table has more than 12 rows. See https://ragflow.io/docs/dev/enable_excel2html for details.`,
-      autoKeywords: 'Auto-keyword',
-      autoKeywordsTip: `Automatically extract N keywords for each chunk to increase their ranking for queries containing those keywords. Be aware that extra tokens will be consumed by the indexing model specified in 'Configuration'. You can check or update the added keywords for a chunk from the chunk list. For details, see https://ragflow.io/docs/dev/autokeyword_autoquestion.`,
-      autoQuestions: 'Auto-question',
-      autoQuestionsTip: `Automatically extract N questions for each chunk to increase their ranking for queries containing those questions. You can check or update the added questions for a chunk from the chunk list. This feature will not disrupt the chunking process if an error occurs, except that it may add an empty result to the original chunk. Be aware that extra tokens will be consumed by the indexing model specified in 'Configuration'. For details, see https://ragflow.io/docs/dev/autokeyword_autoquestion.`,
-      redo: 'Do you want to clear the existing {{chunkNum}} chunks?',
-      setMetaData: 'Set metadata',
-      pleaseInputJson: 'Please enter JSON',
-      documentMetaTips: `<p>The metadata is in Json format(it's not searchable). It will be added into prompt for LLM if any chunks of this document are included in the prompt.</p>
-<p>Examples:</p>
-<b>The metadata is:</b><br>
+      html4excel: 'Excel\'den HTML\'e',
+      html4excelTip: `Genel parçalama yöntemi ile kullanın. Devre dışı bırakıldığında, bilgi tabanındaki elektronik tablolar (XLSX veya XLS(Excel 97-2003)) anahtar-değer çiftlerine ayrıştırılır. Etkinleştirildiğinde, orijinal tabloda 12\'den fazla satır varsa her 12 satırda bir bölünerek HTML tablolarına ayrıştırılır. Detaylar için https://ragflow.io/docs/dev/enable_excel2html adresine bakın.`,
+      autoKeywords: 'Otomatik anahtar kelime',
+      autoKeywordsTip: `Bu anahtar kelimeleri içeren sorgular için sıralamalarını artırmak üzere her parça için otomatik olarak N anahtar kelime çıkarır. 'Yapılandırma'da belirtilen indeksleme modeli tarafından ekstra tokenların tüketileceğini unutmayın. Bir parça için eklenen anahtar kelimeleri parça listesinden kontrol edebilir veya güncelleyebilirsiniz. Detaylar için https://ragflow.io/docs/dev/autokeyword_autoquestion adresine bakın.`,
+      autoQuestions: 'Otomatik soru',
+      autoQuestionsTip: `Bu soruları içeren sorgular için sıralamalarını artırmak üzere her parça için otomatik olarak N soru çıkarır. Bir parça için eklenen soruları parça listesinden kontrol edebilir veya güncelleyebilirsiniz. Bu özellik, bir hata oluşursa parçalama işlemini bozmaz, yalnızca orijinal parçaya boş bir sonuç ekleyebilir. 'Yapılandırma'da belirtilen indeksleme modeli tarafından ekstra tokenların tüketileceğini unutmayın. Detaylar için https://ragflow.io/docs/dev/autokeyword_autoquestion adresine bakın.`,
+      redo: 'Mevcut {{chunkNum}} parçayı temizlemek istiyor musunuz?',
+      setMetaData: 'Meta veri ayarla',
+      pleaseInputJson: 'Lütfen JSON girin',
+      documentMetaTips: `<p>Meta veri Json formatındadır (aranabilir değildir). Bu belgenin herhangi bir parçası komuta dahil edildiğinde LLM için komuta eklenecektir.</p>
+<p>Örnekler:</p>
+<b>Meta veri:</b><br>
 <code>
   {
-      "Author": "Alex Dowson",
-      "Date": "2024-11-12"
+      "Yazar": "Ahmet Yılmaz",
+      "Tarih": "2024-11-12"
   }
 </code><br>
-<b>The prompt will be:</b><br>
-<p>Document: the_name_of_document</p>
-<p>Author: Alex Dowson</p>
-<p>Date: 2024-11-12</p>
-<p>Relevant fragments as following:</p>
+<b>Komut şöyle olacak:</b><br>
+<p>Belge: belge_adı</p>
+<p>Yazar: Ahmet Yılmaz</p>
+<p>Tarih: 2024-11-12</p>
+<p>İlgili parçalar aşağıdaki gibidir:</p>
 <ul>
-<li>  Here is the chunk content....</li>
-<li>  Here is the chunk content....</li>
+<li>  İşte parça içeriği....</li>
+<li>  İşte parça içeriği....</li>
 </ul>
 `,
-      metaData: 'Meta data',
+      metaData: 'Meta veri',
       deleteDocumentConfirmContent:
-        'The document is associated with the knowledge graph. After deletion, the related node and relationship information will be deleted, but the graph will not be updated immediately. The update graph action is performed during the process of parsing the new document that carries the knowledge graph extraction task.',
-      plainText: 'Naive',
-      reRankModelWaring: 'Re-rank model is very time consuming.',
+        'Belge bilgi grafiği ile ilişkilidir. Silindikten sonra ilgili düğüm ve ilişki bilgileri silinecek, ancak grafik hemen güncellenmeyecektir. Grafik güncelleme işlemi, bilgi grafiği çıkarma görevi taşıyan yeni belgenin ayrıştırılması sırasında gerçekleştirilir.',
+      plainText: 'Basit',
+      reRankModelWaring: 'Yeniden sıralama modeli çok zaman alıcıdır.',
     },
     knowledgeConfiguration: {
       globalIndexModelTip:
