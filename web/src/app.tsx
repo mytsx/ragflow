@@ -8,6 +8,7 @@ import pt_BR from 'antd/lib/locale/pt_BR';
 import deDE from 'antd/locale/de_DE';
 import enUS from 'antd/locale/en_US';
 import ru_RU from 'antd/locale/ru_RU';
+import tr_TR from 'antd/locale/tr_TR';
 import vi_VN from 'antd/locale/vi_VN';
 import zhCN from 'antd/locale/zh_CN';
 import zh_HK from 'antd/locale/zh_HK';
@@ -55,6 +56,7 @@ const AntLanguageMap = {
   vi: vi_VN,
   'pt-BR': pt_BR,
   de: deDE,
+  tr: tr_TR,
 };
 
 // if (process.env.NODE_ENV === 'development') {

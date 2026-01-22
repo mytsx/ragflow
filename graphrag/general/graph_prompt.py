@@ -98,6 +98,23 @@ Output:
 ("relationship"{tuple_delimiter}"Alex"{tuple_delimiter}"Humanity's Response"{tuple_delimiter}"Alex and his team are the key figures in Humanity's Response to the unknown intelligence."{tuple_delimiter}8){record_delimiter}
 ("relationship"{tuple_delimiter}"Control"{tuple_delimiter}"Intelligence"{tuple_delimiter}"The concept of Control is challenged by the Intelligence that writes its own rules."{tuple_delimiter}7){completion_delimiter}
 #############################
+Example 4:
+
+Entity_types: [kişi, organizasyon, konum, olay, kavram]
+Text:
+Türkiye Cumhuriyeti'nin kurucusu Mustafa Kemal Atatürk, 1923 yılında Ankara'da cumhuriyeti ilan etti. Bu tarihi olay, Türk milletinin bağımsızlık mücadelesinin doruk noktasıydı. Atatürk'ün liderliğinde gerçekleştirilen reformlar, modern Türkiye'nin temellerini attı.
+#############
+Output:
+("entity"{tuple_delimiter}"Mustafa Kemal Atatürk"{tuple_delimiter}"kişi"{tuple_delimiter}"Mustafa Kemal Atatürk, Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır."){record_delimiter}
+("entity"{tuple_delimiter}"Türkiye Cumhuriyeti"{tuple_delimiter}"organizasyon"{tuple_delimiter}"Türkiye Cumhuriyeti, 1923 yılında kurulan modern Türk devletidir."){record_delimiter}
+("entity"{tuple_delimiter}"Ankara"{tuple_delimiter}"konum"{tuple_delimiter}"Ankara, Türkiye Cumhuriyeti'nin başkenti ve cumhuriyetin ilan edildiği şehirdir."){record_delimiter}
+("entity"{tuple_delimiter}"Cumhuriyetin İlanı"{tuple_delimiter}"olay"{tuple_delimiter}"Cumhuriyetin İlanı, 1923 yılında Türkiye'nin cumhuriyet olarak ilan edildiği tarihi olaydır."){record_delimiter}
+("entity"{tuple_delimiter}"Bağımsızlık Mücadelesi"{tuple_delimiter}"kavram"{tuple_delimiter}"Bağımsızlık Mücadelesi, Türk milletinin özgürlük ve egemenlik için verdiği mücadeleyi ifade eder."){record_delimiter}
+("relationship"{tuple_delimiter}"Mustafa Kemal Atatürk"{tuple_delimiter}"Türkiye Cumhuriyeti"{tuple_delimiter}"Atatürk, Türkiye Cumhuriyeti'nin kurucusu ve ilk cumhurbaşkanıdır."{tuple_delimiter}10){record_delimiter}
+("relationship"{tuple_delimiter}"Mustafa Kemal Atatürk"{tuple_delimiter}"Ankara"{tuple_delimiter}"Atatürk, Ankara'da cumhuriyeti ilan etmiştir."{tuple_delimiter}9){record_delimiter}
+("relationship"{tuple_delimiter}"Cumhuriyetin İlanı"{tuple_delimiter}"Ankara"{tuple_delimiter}"Cumhuriyetin ilanı Ankara'da gerçekleşmiştir."{tuple_delimiter}8){record_delimiter}
+("relationship"{tuple_delimiter}"Cumhuriyetin İlanı"{tuple_delimiter}"Bağımsızlık Mücadelesi"{tuple_delimiter}"Cumhuriyetin ilanı, bağımsızlık mücadelesinin doruk noktasıdır."{tuple_delimiter}9){completion_delimiter}
+#############################
 -Real Data-
 ######################
 Entity_types: {entity_types}

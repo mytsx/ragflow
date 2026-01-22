@@ -32,6 +32,19 @@ services:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./service_conf.yaml.template:/ragflow/conf/service_conf.yaml.template
       - ./entrypoint.sh:/ragflow/entrypoint.sh
+      # Turkish language support - mount only changed files
+      # Backend
+      - ../api/apps/dialog_app.py:/ragflow/api/apps/dialog_app.py
+      - ../api/db/db_models.py:/ragflow/api/db/db_models.py
+      - ../api/utils/validation_utils.py:/ragflow/api/utils/validation_utils.py
+      - ../deepdoc/parser/mineru_parser.py:/ragflow/deepdoc/parser/mineru_parser.py
+      - ../rag/prompts/cross_languages_sys_prompt.md:/ragflow/rag/prompts/cross_languages_sys_prompt.md
+      - ../graphrag/general/graph_prompt.py:/ragflow/graphrag/general/graph_prompt.py
+      # Frontend - mount pre-built dist folder
+      - ../web/dist:/ragflow/web/dist
+      # SDK
+      - ../sdk/python/ragflow_sdk/modules/dataset.py:/ragflow/sdk/python/ragflow_sdk/modules/dataset.py
+      - ../sdk/python/ragflow_sdk/modules/chat.py:/ragflow/sdk/python/ragflow_sdk/modules/chat.py
     env_file: .env
     networks:
       - ragflow

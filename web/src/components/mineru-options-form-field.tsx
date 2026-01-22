@@ -28,6 +28,7 @@ const languageOptions = buildOptions([
   'Thai',
   'Greek',
   'Hindi',
+  'Turkish',
 ]);
 
 export function MinerUOptionsFormField({

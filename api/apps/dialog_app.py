@@ -106,6 +106,7 @@ async def set_dialog():
             return get_data_error_result(message=f'Datasets use different embedding models: {[kb.embd_id for kb in kbs]}"')
 
         llm_id = req.get("llm_id", tenant.llm_id)
+        language = req.get("language", "English")
         if not dialog_id:
             dia = {
                 "id": get_uuid(),
@@ -113,6 +114,7 @@ async def set_dialog():
                 "name": name,
                 "kb_ids": req.get("kb_ids", []),
                 "description": description,
+                "language": language,
                 "llm_id": llm_id,
                 "llm_setting": llm_setting,
                 "prompt_config": prompt_config,

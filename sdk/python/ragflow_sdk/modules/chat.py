@@ -24,6 +24,7 @@ class Chat(Base):
         self.id = ""
         self.name = "assistant"
         self.avatar = "path/to/avatar"
+        self.language = "English"
         self.llm = Chat.LLM(rag, {})
         self.prompt = Chat.Prompt(rag, {})
         super().__init__(rag, res_dict)

@@ -20,6 +20,7 @@ const Languages = [
   'Japanese',
   'Korean',
   'Vietnamese',
+  'Turkish',
 ];
 
 export const crossLanguageOptions = Languages.map((x) => ({
